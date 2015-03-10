@@ -1,0 +1,106 @@
+@font-face{
+	font-family: 'Ubuntu';
+	src: url(../fonts/Ubuntu-R.ttf);
+	src: local(../fonts/Ubuntu-R.ttf);
+}
+
+html {
+  position: relative;
+  min-height: 100%;  
+}
+
+body{
+	font-family: 'Ubuntu';
+	margin-bottom: 60px;	
+}
+
+footer{
+	display: block;
+}
+
+.block {
+	background-color:rgba(0,0,0,0.5);    
+  	padding:12px;
+  	margin-top: 10%;
+}
+
+.footer {
+  background-color:rgba(0,0,0,0.2);  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+.header-site{
+	background-color:rgba(0,0,0,0.2);  	
+	padding: 10px;
+}
+
+.footer-site{
+	text-align: center;
+	background-color: #eee;
+	padding: 5px;
+}
+
+.vinhos, .btnaddvinhos{
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+
+.panel-vinhos{
+	margin-top: 20px;
+}
+
+.message-vinho{
+	margin-top: 10px;	
+}
+
+.beta{	
+	font-size: 15px;
+}
+
+.background-off{
+	background-color: #eee;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.login{
+	max-width: 365px;
+	min-width: 365px;
+}
+
+.titulo-diario{
+	text-align: center;
+}
+
+.semvinhos{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.form-space{
+	margin-top: 5px;
+}
+
+.vinhos-margin{
+	margin-top: 70px;
+}
+
+.fa-heart{
+	color: red;
+}
+
+.footer-site{
+	margin-top: 50px;
+	background-color: #eee;	
+}
+
+.frase-footer{
+	margin-top: 20px;
+}
+
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open>.dropdown-toggle.btn-facebook{color:#fff;background-color:#2d4373;border-color:rgba(0,0,0,0.2)}

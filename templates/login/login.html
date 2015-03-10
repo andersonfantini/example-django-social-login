@@ -1,0 +1,48 @@
+{% extends "layouts/site.html" %}
+
+{% block content %}
+
+<div class="container">
+	
+  	<div class="row">
+		<div class="col-md-5 col-md-offset-4 block">			 
+			
+			<form method="post" action=" {% url 'login' %} ">
+				{% csrf_token %}
+				{% if msg %}
+					<p style="margin: 0px;" class="alert alert-danger">{{ msg }}</p>
+				{% endif %}
+				<div class="form-group">
+					<a href="{% url 'social:begin' 'facebook' %}" class="pull-right btn  btn-social btn-facebook">	
+						<i class="fa fa-facebook"></i>  Sign in with Facebook
+					</a>
+					<br><br>
+				</div>
+				<div class="form-group">
+					{% if form.email.errors %}
+					    {% for erro in form.email.errors %}
+					       <p style="margin: 0px;" class="alert alert-danger">{{erro}}</p>
+					    {% endfor %}
+					{% endif %}
+					<label>E-mail</label>
+					<input type="text" name="email" class="form-control input-lg">
+				</div>
+				<div class="form-group">
+					{% if form.password.errors %}
+					    {% for erro in form.password.errors %}
+					       <p style="margin: 0px;" class="alert alert-danger">{{erro}}</p>
+					    {% endfor %}
+					{% endif %}
+					<label>Senha</label>
+					<input type="password" name="password" class="form-control input-lg">	
+				</div>
+				<input type="submit" value="Entrar" class="btn btn-primary">				
+				<a href="{% url 'cadastro' %}" class="btn btn-success center-block" style="margin-top:20px;"></i> Cadastrar Gratuitamente</a>
+			</form>
+			
+		</div>
+	</div>
+
+</div>
+
+{% endblock content %}
